@@ -121,19 +121,20 @@ ul li:last-child {
 }
 
 .color-swatch-1 {
-  background-color: var(--bg-color);
+  background-color: #9ba789;
 }
 
 .color-swatch-2 {
-  background-color: var(--link-color);
+  background-color: #9f7962;
 }
 
 .color-swatch-3 {
-  background-color: var(--link-hover-color);
+  background-color: #cfdce2;
 }
 
 .color-swatch-4 {
-  background-color: var(--color-4);
+  background-color: #ffffff;
+  border: solid black;
 }
 
 .color-swatch-5 {
@@ -207,8 +208,8 @@ button:focus-within {
 }
 
 button:hover {
-  background-color: var(--link-hover-color);
-  transform: scale(3) rotate(40deg);
+  /* background-color: var(--link-hover-color);
+  transform: scale(3) rotate(40deg); */
 }
 
 button:active {
@@ -222,18 +223,26 @@ button:active {
 .h1-sample {
   font-size: 2.4rem;
   font-weight: bold;
+  font-family: pulpo-rust-75, serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .h2-sample {
   font-family: var(--secondary-font);
   font-style: italic;
   font-size: 1.25rem;
+  font-family: sofia-pro, sans-serif;
+  font-style: normal;
+  font-weight: 100;
 }
 
 p.typography-sample {
-  font-family: var(--secondary-font);
   line-height: 1.5;
   max-width: 960px;
+  font-family: sofia-pro, sans-serif;
+  font-style: normal;
+  font-weight: 100;
 }
 
 strong {
@@ -253,10 +262,10 @@ a {
 }
 
 a:hover {
-  color: var(--link-hover-color);
+  /* color: var(--link-hover-color);
   font-size: 4rem;
   background-color: var(--color-4);
-  opacity: 0.1;
+  opacity: 0.1; */
 }
 
 p[class*="font-details-"] {
