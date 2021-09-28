@@ -59,25 +59,27 @@ footer {
 }
 
 .full-width {
-  background: var(--bg-color);
-  color: white;
+  background-image: linear-gradient(to bottom, #9ba789, #ffffff);
   width: 100%;
 }
 
 .header-wrapper h1 {
   font-size: 3rem;
-  text-transform: uppercase;
+
   letter-spacing: -2px;
   padding-right: 0.75em;
   font-weight: bold;
-  color: white;
+  color: black;
+  font-family: pulpo-rust-75, serif;
+  letter-spacing: 3px;
 }
 
 .header-wrapper h2 {
   font-size: 1.6em;
-  color: rgba(255, 255, 255, 0.95);
   font-weight: bold;
   margin: var(--white-space) 0;
+  font-family: proxima nova;
+  font-weight: 400;
 }
 
 .header-wrapper h3 {
@@ -87,6 +89,10 @@ footer {
 
 .header-wrapper h4 {
   font-size: 0.8rem;
+}
+
+header {
+  background-image: linear-gradient(to bottom, #9ba789, #ffffff);
 }
 
 main {
@@ -99,10 +105,10 @@ section {
 }
 
 .section-heading {
-  font-style: italic;
   font-size: 1.3rem;
   color: #777;
   margin: 0.5rem 0;
+  font-family: proxima nova;
 }
 
 ul {
@@ -148,19 +154,15 @@ ul li:last-child {
 }
 
 .texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+  background: url(../img/GrungeAcupOf.jpg) top left repeat;
 }
 
 .texture-swatch-2 {
-  background: url(../img/subtle_grunge.png) top left repeat;
-}
-
-.texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+  background: url(../img/woodtexture.png) top left repeat;
 }
 
 .texture-swatch-3 {
-  background: url(../img/white_paperboard.png) top left repeat;
+  background: url(../img/blade.jpg) top left repeat;
 }
 
 .images ul {
@@ -183,19 +185,20 @@ ul li:last-child {
 button {
   padding: 1rem;
   border-radius: 4px;
-  background: var(--link-color);
+
   text-align: center;
   text-decoration: none;
   font: bold 1.25em/1 var(--primary-font);
   letter-spacing: 1px;
   color: white;
-  text-transform: uppercase;
-  text-shadow: 0px -1px 0px #0374a0;
-  transition: all 0.2s ease;
+  font-family: sofia pro;
   cursor: pointer;
-  /* margin: 0 1rem 0 0; */
+  border: none;
 }
-
+.primary-button {
+  background: #9ba789;
+  color: white;
+}
 .secondary-button {
   background: var(--color-5);
 }
@@ -205,19 +208,6 @@ button:active,
 button:focus-within {
   outline: 0;
   border-radius: 4px;
-}
-
-button:hover {
-  /* background-color: var(--link-hover-color);
-  transform: scale(3) rotate(40deg); */
-}
-
-button:active {
-  background-color: var(--bg-color);
-}
-
-.typography-main {
-  color: var(--main-text-color);
 }
 
 .h1-sample {
@@ -259,13 +249,11 @@ a {
   font-weight: bold;
   text-decoration: none;
   transition: all 0.2s;
+  color: blue;
 }
 
 a:hover {
-  /* color: var(--link-hover-color);
-  font-size: 4rem;
-  background-color: var(--color-4);
-  opacity: 0.1; */
+  text-decoration: underline;
 }
 
 p[class*="font-details-"] {
@@ -274,20 +262,29 @@ p[class*="font-details-"] {
   margin-bottom: var(--white-space);
   font-size: 0.75rem;
   font-family: var(--secondary-font);
-  color: #6f6f6f;
+  color: #6e6565;
+  font-family: proxima nova;
 }
 
 .adjectives ul {
-  font-size: 2rem;
-  opacity: 0.5;
+  font-size: 1.5rem;
+
+  font-family: proxima nova;
+  font-weight: 100;
+  color: #000;
 }
 
 .adjectives ul {
-  flex-direction: column;
+  flex-direction: row;
 }
 
 footer {
   font-style: italic;
+  background-image: linear-gradient(to bottom, #9ba789, #ffffff);
+}
+
+.font-details-h1 {
+  font-family: proxima nova;
 }
 
 @media (min-width: 800px) {
@@ -310,6 +307,7 @@ footer {
 
 @media (min-width: 900px) {
   .adjectives ul {
-    flex-direction: row;
+    flex-direction: column;
+    list-style-type: disc;
   }
 }
